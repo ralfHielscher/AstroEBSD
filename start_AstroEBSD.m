@@ -35,25 +35,25 @@ end
 Astro_FP=local_path(1:astroloc+8);
 
 %build folders for things if this is a first run
-if exist([Astro_FP '\testing'],'dir') ~= 7
-    mkdir([Astro_FP '\testing']);
+if exist([Astro_FP filesep 'testing'],'dir') ~= 7
+    mkdir([Astro_FP filesep 'testing']);
 end
-if exist([Astro_FP '\outputs'],'dir') ~= 7
-    mkdir([Astro_FP '\outputs']);
+if exist([Astro_FP filesep 'outputs'],'dir') ~= 7
+    mkdir([Astro_FP filesep 'outputs']);
 end
-if exist([Astro_FP '\decks'],'dir') ~= 7
-    mkdir([Astro_FP '\decks']);
+if exist([Astro_FP filesep 'decks'],'dir') ~= 7
+    mkdir([Astro_FP filesep 'decks']);
 end
 
 %build the paths
-addpath([Astro_FP '\gen']);
-addpath([Astro_FP '\bin']);
-addpath([Astro_FP '\utils']);
-addpath([Astro_FP '\phases']);
-addpath([Astro_FP '\testing']);
-addpath([Astro_FP '\decks']);
-addpath([Astro_FP '\outputs']);
-addpath([Astro_FP '\plot']);
+addpath([Astro_FP filesep 'gen']);
+addpath([Astro_FP filesep 'bin']);
+addpath([Astro_FP filesep 'utils']);
+addpath([Astro_FP filesep 'phases']);
+addpath([Astro_FP filesep 'testing']);
+addpath([Astro_FP filesep 'decks']);
+addpath([Astro_FP filesep 'outputs']);
+addpath([Astro_FP filesep 'plot']);
 addpath([Astro_FP]);
 
 disp('AstroEBSD file paths loaded');
